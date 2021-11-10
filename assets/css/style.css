@@ -1,0 +1,342 @@
+/** RESET STYLE */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 16px;
+   color: black;
+   background-color: white;
+   text-rendering: optimizeLegibility;
+}
+button,
+input {
+   outline: none;
+   border: none;
+   user-select: none;
+   -webkit-user-select: none;
+   -webkit-tap-highlight-color: transparent;
+}
+img {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+ul {
+   list-style-type: none;
+}
+a {
+   color: black;
+   text-decoration: none;
+}
+:root {
+   --primary-color: #383838;
+   --secondary-color: rgb(115, 151, 73);
+}
+.website {
+   overflow: hidden;
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+/** CUSTOM STYLE */
+/* header */
+.header {
+   padding: 30px 0;
+}
+.navigation {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.navigation__item {
+   color: #696969;
+   text-transform: uppercase;
+   transition: all ease 0.3s;
+}
+.navigation__item:hover {
+   color: var(--secondary-color);
+}
+.navigation__item + .navigation__item {
+   margin-left: 40px;
+}
+.navigation__itemLogo {
+   width: 90px;
+   transition: all ease 0.3s;
+}
+.navigation__itemLogo:hover {
+   transform: scale(1.1);
+}
+
+/* main */
+.slider {
+   position: relative;
+   padding-top: 50%;
+   background-image: url('../images/slider.jpg');
+   background-position: top;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.slider__content {
+   position: absolute;
+   left: 6%;
+   top: 36%;
+   color: var(--primary-color);
+   font-size: 1.5vw;
+}
+.slider__heading {
+   font-size: 4em;
+}
+.slider__heading:first-of-type {
+   font-style: italic;
+}
+.slider__paragraph {
+   margin-top: 1em;
+   color: rgb(27, 27, 27);
+   font-size: 0.9em;
+   max-width: 50%;
+}
+.slider__button {
+   border-radius: 30px;
+   color: white;
+   text-transform: uppercase;
+   font-size: 0.9em;
+   margin-top: 1em;
+   padding: 0.7em 2.2em;
+   background-color: #758bda;
+   transition: all ease 0.3s;
+}
+.slider__button:hover {
+   cursor: pointer;
+   background-color: var(--primary-color);
+}
+.slider__rowButton {
+   position: absolute;
+   top: 72%;
+   right: 12%;
+}
+.slider__buttonS {
+   background-color: transparent;
+   font-size: 3vw;
+   color: white;
+   cursor: pointer;
+}
+.slider__buttonS:hover {
+   color: var(--primary-color);
+}
+.slider__prevButton {
+   margin-right: 40px;
+}
+/* banner */
+.banner {
+   margin-top: 25px;
+   display: flex;
+   justify-content: space-between;
+}
+.banner__left {
+   margin-right: 20px;
+   position: relative;
+}
+.banner__text {
+   font-size: 1vw;
+   color: var(--primary-color);
+   pointer-events: none;
+   transition: all ease 0.3s;
+}
+.banner__left .banner__text {
+   position: absolute;
+   bottom: 23%;
+   right: 1%;
+}
+.banner__textHeading-1 {
+   font-size: 4em;
+   font-weight: lighter;
+}
+.banner__textHeading-2 {
+   font-size: 4em;
+}
+.banner__textSubHeading {
+   font-size: 1.6em;
+   text-transform: uppercase;
+}
+.banner__item:hover .banner__text {
+   color: var(--secondary-color);
+}
+.banner__right {
+   position: relative;
+}
+.banner__right .banner__text {
+   position: absolute;
+   top: 23%;
+   left: 6%;
+}
+
+/* products */
+.products__heading {
+   font-size: 4vw;
+}
+.products__heading span {
+   font-weight: lighter;
+}
+.products__list {
+   margin-top: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+.products__item {
+   text-align: center;
+   color: var(--primary-color);
+   font-size: 1vw;
+}
+.products__item + .products__item {
+   margin-left: 20px;
+}
+.products__itemImage {
+   overflow: hidden;
+}
+.products__itemImage img {
+   cursor: pointer;
+   transform: scale(1.3);
+   transition: all ease 0.5s;
+}
+.products__itemImage:hover img {
+   transform: scale(1);
+}
+.products__itemHeading {
+   margin-top: 12px;
+   font-weight: lighter;
+   font-size: 1.5em;
+}
+.products__itemPrice {
+   margin-top: 10px;
+   color: var(--secondary-color);
+   font-size: 2.6em;
+}
+.products__itemPrice span {
+   font-size: 0.6em;
+}
+.products__itemButton {
+   color: white;
+   font-weight: bold;
+   margin-top: 15px;
+   padding: 1em 4em;
+   background-color: #758bda;
+   font-size: 1.2em;
+   text-transform: uppercase;
+   border-radius: 30px;
+   transition: all ease 0.3s;
+}
+.products__itemButton:hover {
+   cursor: pointer;
+   background-color: var(--primary-color);
+}
+
+/* banner end */
+.bannerEnd {
+   margin-top: 25px;
+   display: flex;
+   justify-content: space-between;
+}
+.bannerEnd__left {
+   margin-right: 20px;
+   position: relative;
+}
+.bannerEnd__text {
+   font-size: 1vw;
+   color: var(--primary-color);
+   pointer-events: none;
+   transition: all ease 0.3s;
+}
+.bannerEnd__left .bannerEnd__text {
+   position: absolute;
+   top: 20%;
+   right: 1%;
+}
+.bannerEnd__textHeading-1 {
+   font-size: 4em;
+   font-weight: lighter;
+}
+.bannerEnd__textHeading-2 {
+   font-size: 4em;
+}
+.bannerEnd__textSubHeading {
+   font-size: 1.6em;
+   text-transform: uppercase;
+}
+.bannerEnd__item:hover .bannerEnd__text {
+   color: var(--secondary-color);
+}
+.bannerEnd__right {
+   position: relative;
+}
+.bannerEnd__right .bannerEnd__text {
+   position: absolute;
+   top: 35%;
+   right: 2%;
+}
+/* footer */
+.footer {
+   margin-top: 20px;
+   display: flex;
+   justify-content: space-between;
+   text-align: left;
+   font-size: 1vw;
+}
+.footer__row {
+   display: flex;
+}
+.footer__item {
+   width: calc(100% / 3);
+}
+.footer__item + .footer__item {
+   margin-left: 20px;
+}
+.footer__heading {
+   font-size: 1.6em;
+   margin-bottom: 16px;
+}
+.footer__logo {
+   margin-right: 10px;
+}
+.footer__address {
+   font-style: normal;
+}
+.footer__mail,
+.footer__tel {
+   font-size: 1.4em;
+}
+.footer__tel {
+   margin-top: 6px;
+}
+.footer__mail a {
+   font-size: 0.8em;
+}
+.footer__tel span {
+   font-size: 0.8em;
+}
+.footer__copyright {
+   font-size: 1.3em;
+}
+
+/* responsive */
+@media screen and (min-width: 1200px) {
+   .slider__content {
+      font-size: 18px;
+   }
+   .slider__buttonS {
+      font-size: 36px;
+   }
+   .banner__text,
+   .products__item,
+   .bannerEnd__text,
+   .footer {
+      font-size: 12px;
+   }
+   .products__heading {
+      font-size: 48px;
+   }
+}
